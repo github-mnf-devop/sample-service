@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  fastapi-app:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      VAR1: "value_of_var1"
+      SEC1: "value_of_sec1"
+      
+  fastapi-app-2:
+    build: .
+    ports:
+      - "8005:8000"
+    environment:
+      VAR1: "value_of_var1"
+      SEC1: "value_of_sec1"
+
+  fastapi-app-3:
+    build: .
+    ports:
+      - "8010:8000"
+    environment:
+      VAR1: "value_of_var1"
+      SEC1: "value_of_sec1"
+      
